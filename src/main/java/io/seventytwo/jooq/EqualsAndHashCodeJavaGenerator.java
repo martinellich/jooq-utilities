@@ -6,8 +6,14 @@ import org.jooq.codegen.JavaWriter;
 import org.jooq.meta.ColumnDefinition;
 import org.jooq.meta.TableDefinition;
 
+/**
+ * {@link JavaGenerator} implementation that adds equals() and hashCode() to a {@link org.jooq.Record}
+ */
 public class EqualsAndHashCodeJavaGenerator extends JavaGenerator {
 
+    /**
+     * If a table has a PrimaryKey, equals() and hashCode are generated based on that PrimaryKey
+     */
     @Override
     protected void generateRecordClassFooter(TableDefinition table, JavaWriter out) {
         if (table.getPrimaryKey() != null) {
