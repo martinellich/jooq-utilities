@@ -13,6 +13,9 @@ public class EqualsAndHashCodeJavaGenerator extends JavaGenerator {
 
     /**
      * If a table has a PrimaryKey, equals() and hashCode are generated based on that PrimaryKey
+     *
+     * @param table {@link TableDefinition}
+     * @param out   {@link JavaWriter}
      */
     @Override
     protected void generateRecordClassFooter(TableDefinition table, JavaWriter out) {
