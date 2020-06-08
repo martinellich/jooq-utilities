@@ -6,9 +6,10 @@
 
     <groupId>io.seventytwo.oss</groupId>
     <artifactId>jooq-utilities</artifactId>
-    <version>0.1.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
     <name>jOOQ Utilities</name>
+    <description>Utilities to use with jOOQ</description>
     <url>https://github.com/72services/jooq-utilities</url>
     <licenses>
         <license>
