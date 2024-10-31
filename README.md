@@ -10,7 +10,7 @@ Add a dependency to the current version:
 
 ```xml
 <dependency>
-    <groupId>io.seventytwo.oss</groupId>
+    <groupId>ch.martinelli.oss</groupId>
     <artifactId>jooq-utilities</artifactId>
     <version>1.1.0</version>
 </dependency>
