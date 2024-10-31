@@ -40,7 +40,7 @@ Add `EqualsAndHashCodeJavaGenerator` to `jooq-codegen-maven` like this:
     </executions>
     <configuration>
         <generator>
-            <name>ch.martinelli.oss.jooq.EqualsAndHashCodeJavaGeneratorch.martinelli.oss.jooq.EqualsAndHashCodeJavaGenerator</name>
+            <name>ch.martinelli.oss.jooq.EqualsAndHashCodeJavaGenerator</name>
             ...
         </generator>
     </configuration>
