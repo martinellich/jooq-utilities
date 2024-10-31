@@ -18,7 +18,8 @@ Add a dependency to the current version:
 
 ### EqualsAndHashCodeJavaGenerator
 
-By default jOOQ generates equals() and hashCode() on all fields. But sometimes it's useful to have only the primary key fields. 
+By default, jOOQ generates equals() and hashCode() with all fields. But sometimes it is useful to have only the primary
+key fields. 
 
 `EqualsAndHashCodeJavaGenerator` is a `JavaGenerator` that adds `equals()` and `hashCode()` to the generated Records 
 based on the PrimaryKey.
