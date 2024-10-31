@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.seventytwo.oss</groupId>
+    <groupId>ch.martinelli.oss</groupId>
     <artifactId>jooq-utilities</artifactId>
     <version>1.1.1-SNAPSHOT</version>
 
     <name>jOOQ Utilities</name>
     <description>Utilities to use with jOOQ</description>
-    <url>https://github.com/72services/jooq-utilities</url>
+    <url>https://github.com/martinellich/jooq-utilities</url>
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
@@ -23,9 +23,9 @@
         <developer>
             <id>simasch</id>
             <name>Simon Martineli</name>
-            <organization>72 Services LLC</organization>
-            <organizationUrl>https://72.services</organizationUrl>
-            <email>simon@72.services</email>
+            <organization>Martinelli LLC</organization>
+            <organizationUrl>https://martinelli.ch</organizationUrl>
+            <email>simon@martinelli.ch</email>
         </developer>
     </developers>
 
@@ -34,7 +34,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.scm.id>github</project.scm.id>
-        <jooq.version>3.18.2</jooq.version>
+        <jooq.version>3.19.14</jooq.version>
     </properties>
 
     <dependencies>
@@ -119,9 +119,9 @@
     </profiles>
 
     <scm>
-        <connection>scm:git:git@github.com:72services/jooq-utilities.git</connection>
-        <developerConnection>scm:git:git@github.com:72services/jooq-utilities.git</developerConnection>
-        <url>git@github.com:72services/jooq-utilities.git</url>
+        <connection>scm:git:git@github.com:martinellich/jooq-utilities.git</connection>
+        <developerConnection>scm:git:git@github.com:martinellich/jooq-utilities.git</developerConnection>
+        <url>git@github.com:martinellich/jooq-utilities.git</url>
     </scm>
 
     <distributionManagement>

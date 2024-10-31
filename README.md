@@ -24,9 +24,10 @@ key fields.
 `EqualsAndHashCodeJavaGenerator` is a `JavaGenerator` that adds `equals()` and `hashCode()` to the generated Records 
 based on the PrimaryKey.
 
-Add `EqualsAndHashCodeJavaGenerator` to `jooq-codegen-maven` like this: 
+Add `EqualsAndHashCodeJavaGenerator` to `jooq-codegen-maven` like this:
 
 ```xml
+
 <plugin>
     <groupId>org.jooq</groupId>
     <artifactId>jooq-codegen-maven</artifactId>
@@ -39,8 +40,8 @@ Add `EqualsAndHashCodeJavaGenerator` to `jooq-codegen-maven` like this:
     </executions>
     <configuration>
         <generator>
-            <name>io.seventytwo.jooq.EqualsAndHashCodeJavaGenerator</name>
-            ... 
+            <name>ch.martinelli.oss.jooq.EqualsAndHashCodeJavaGeneratorch.martinelli.oss.jooq.EqualsAndHashCodeJavaGenerator</name>
+            ...
         </generator>
     </configuration>
 </plugin>
