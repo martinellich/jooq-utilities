@@ -10,7 +10,7 @@ Add a dependency to the current version:
 
 ```xml
 <dependency>
-    <groupId>io.seventytwo.oss</groupId>
+    <groupId>ch.martinelli.oss</groupId>
     <artifactId>jooq-utilities</artifactId>
     <version>1.1.0</version>
 </dependency>
@@ -40,7 +40,7 @@ Add `EqualsAndHashCodeJavaGenerator` to `jooq-codegen-maven` like this:
     </executions>
     <configuration>
         <generator>
-            <name>ch.martinelli.oss.jooq.EqualsAndHashCodeJavaGeneratorch.martinelli.oss.jooq.EqualsAndHashCodeJavaGenerator</name>
+            <name>ch.martinelli.oss.jooq.EqualsAndHashCodeJavaGenerator</name>
             ...
         </generator>
     </configuration>
