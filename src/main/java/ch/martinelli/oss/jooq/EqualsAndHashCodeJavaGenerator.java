@@ -25,24 +25,24 @@ public class EqualsAndHashCodeJavaGenerator extends JavaGenerator {
 
             out.println();
 
-            out.tab(1).println("public boolean equals(Object o) {");
-            out.tab(2).println("if (this == o) return true;");
-            out.tab(2).println("if (o == null || getClass() != o.getClass()) return false;");
+            out.tab(0).println("public boolean equals(Object o) {");
+            out.tab(0).println("if (this == o) return true;");
+            out.tab(0).println("if (o == null || getClass() != o.getClass()) return false;");
             out.println();
-            out.tab(2).println(javaClassName + " record = (" + javaClassName + ") o;");
+            out.tab(0).println(javaClassName + " record = (" + javaClassName + ") o;");
             out.println();
             for (ColumnDefinition columnDefinition : table.getPrimaryKey().getKeyColumns()) {
                 String javaGetterName = getStrategy().getJavaGetterName(columnDefinition);
 
-                out.tab(2).println("if (!java.util.Objects.equals(" + javaGetterName + "(), record." + javaGetterName + "())) return false;");
+                out.tab(0).println("if (!java.util.Objects.equals(" + javaGetterName + "(), record." + javaGetterName + "())) return false;");
             }
             out.println();
-            out.tab(2).println("return true;");
-            out.tab(1).println("}");
+            out.tab(0).println("return true;");
+            out.tab(0).println("}");
 
             out.println();
 
-            out.tab(1).println("public int hashCode() {");
+            out.tab(0).println("public int hashCode() {");
             boolean first = true;
             StringBuilder sb = new StringBuilder();
             for (ColumnDefinition columnDefinition : table.getPrimaryKey().getKeyColumns()) {
@@ -53,8 +53,8 @@ public class EqualsAndHashCodeJavaGenerator extends JavaGenerator {
                 sb.append("java.util.Objects.hashCode(").append(javaGetterName).append("())");
                 first = false;
             }
-            out.tab(2).println("return " + sb.toString() + ";");
-            out.tab(1).println("}");
+            out.tab(0).println("return " + sb.toString() + ";");
+            out.tab(0).println("}");
         }
     }
 
